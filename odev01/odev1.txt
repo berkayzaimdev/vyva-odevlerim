@@ -1,0 +1,34 @@
+Soru 1
+--------
+
+1. Başla
+2. Diziyi al ve D isimli değişkende tut.
+3. n = D'nin boyutu
+4. i = 0
+5. i >= n-1 ise 13. adıma git.
+6. degisim = False
+7. j = 1
+8. j >= n-i ise 10. adıma git.
+9. D[j] > D[j+1] ise D[j] <-> D[j+1] ve degisim = True
+10. degisim = True ise 13. adıma git.
+11. i=i+1
+12. 5.adıma dön.
+13. Bitir
+
+Algoritmanın en iyi durumu, dizinin sıralı olmasıdır.
+Algoritmanın en kötü durumu, dizinin ters sıralı olmasıdır.
+Algoritmanın ortalama durumu, dizinin kısmen sıralı kısmen sırasız olmasıdır.
+
+En kötü durum : O(n^2) kıyaslama, O(n^2) yer değiştirme
+En iyi durum : O(n) kıyaslama, O(1) yer değiştirme
+Ortalama durum : O(n^2) kıyaslama, O(n^2) yer değiştirme
+
+İçteki döngü dıştaki döngü ile doğru orantılı olarak çalışacağından, en iyi durum dışında n^2 adet kıyaslama elde ederiz.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Soru 2
+-------
+
+1- Fonksiyon, A dizisi için Selection Sort algoritmasını uygulamaktadır. A dizisinin boyutunu n değişkenine atarız. Daha sonra j değişkeni, sınırları (1,n-1) olacak şekilde bir döngü oluşturur. İçerideki for döngüsü, j+1'den n'e kadar döner ve en küçük elemanın indisini bulur. Bulunan indis smallest değişkenine atanır. smallest indisindeki eleman ile j indisindeki eleman yer değiştirilir.
+2- Fonksiyonun çalışma süresi, O(n^2) olarak hesaplanır. Dıştaki döngü n kez dönecek ve her adımda içteki döngü de en fazla n-1 defa dönecektir. Sonuç olarak n*(n-1) adım uygulanır ve çalışma süresi O(n^2) olur.
